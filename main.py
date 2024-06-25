@@ -6,7 +6,7 @@ app = FastAPI()
 
 
 def gemini(question: str):
-    genai.configure(api_key='AIzaSyAFAmVIP6l33PQUj5G0Yk05RyH9u42g1gg')
+    genai.configure(api_key='AIzaSyD71NlNFI6PtmqhbnqXequbdHMthkz17D4')
     model = genai.GenerativeModel('gemini-pro')
     response = model.generate_content(question)
     return response.text
